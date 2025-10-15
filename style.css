@@ -1,0 +1,150 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #002D59; /* Light gray background for the whole page */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px; /* Adjusted max-width for a slightly wider content area */
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff; /* White background for the main content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+header {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text h1 {
+    font-size: 2.2em; /* Slightly larger for prominence */
+    margin: 0;
+    color: #000;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.header-photo img {
+    max-width: 100px;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-right: 25px; /* More space between nav items */
+}
+
+nav a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a.active {
+    color: #000;
+    border-bottom: 2px solid #000; /* Black underline for active */
+}
+
+main {
+    padding: 0;
+}
+
+.resume-container {
+    display: flex;
+}
+
+.vita-index-container {
+    width: 25%;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.vita-index {
+    font-size: 0.9em;
+}
+
+.vita-index ul {
+    padding-left: 10px;
+}
+
+.resume-content {
+    width: 75%;
+    padding-left: 20px;
+    overflow: auto;
+}
+
+main a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #e0f2ff;
+}
+
+.column-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.column {
+    width: 50%;
+    padding: 0 10px;
+}

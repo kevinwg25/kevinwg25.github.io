@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas C. Schmidt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-main">
+                <div class="header-text">
+                    <h1>Douglas C. Schmidt</h1>
+                    <p>Inaugural Dean of the School of Computing, Data Sciences & Physics</p>
+                    <p><a href="http://www.wm.edu/">William & Mary</a></p>
+                    <div class="contact-info">
+                        <a href="mailto:dcschmidt@wm.edu">dcschmidt@wm.edu</a>
+                        <a href="https://www.cs.wm.edu/~dcschmidt/resume.pdf">CV</a>
+                        <a href="https://www.cs.wm.edu/~dcschmidt/">Website</a>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="oldSchmidtSite/Resume for Douglas C. Schmidt_files/wm-photo.jpg" alt="Douglas C. Schmidt">
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="digital-learning.html">Digital Learning</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="https://www.cs.wm.edu/~dcschmidt/research.html">Research</a></li>
+                <li><a href="http://scholar.google.com/citations?user=8GA4R2wAAAAJ&hl=en&oi=sra">Google Scholar</a></li>
+                <li><a href="http://www.youtube.com/channel/UCt-Wvc_ojTzGLpjhruIXYSw">YouTube</a></li>
+                <li><a href="https://cdsp.wm.edu/about/leadership/meet-the-team/schmidt-doug.php">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Welcome</h2>
+            <p>
+                This website provides a central hub for my professional activities. Here you can find my biographical information, resume, course materials, digital learning resources, and multimedia presentations. 
+            </p>
+            <p>
+                My research focuses on software-related topics, including patterns, optimization techniques, and empirical analyses of object-oriented and component-based frameworks and model-driven engineering tools that facilitate the development of distributed real-time and embedded (DRE) middleware and mobile cloud computing applications. My recent work explores prompt engineering techniques and prompt patterns to enhance the accuracy and expressiveness of large language models (LLMs) and generative augmented intelligence platforms.
+            </p>
+            <p>
+                Please use the navigation bar to explore the different sections of this website. My official CV is available <a href="https://www.cs.wm.edu/~dcschmidt/resume.pdf">here</a>.
+            </p>
+        </main>
+        <footer>
+            <p>Last modified: October 2025</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav a");
+            var current = window.location.pathname.split("/").pop();
+            if (current === "") {
+                current = "index.html";
+            }
+            links.forEach(function(link) {
+                if (link.getAttribute("href") === current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
